@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // No explicit base path needed for <username>.github.io repo
   server: {
     host: "::",
     port: 8080,
