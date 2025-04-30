@@ -26,7 +26,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
     >
       <div className="h-48 bg-secondary dark:bg-lightest-navy flex items-center justify-center overflow-hidden">
         {project.image ? (
-          <img src={project.image} alt={`${project.name} screenshot`} className="w-full h-full object-cover" />
+          <img src={project.image} alt={`${project.name} screenshot`} className="w-full h-full object-contain" />
         ) : (
           // Placeholder if no image
           <div className="text-slate dark:text-light-slate flex flex-col items-center justify-center w-full h-full">
@@ -39,8 +39,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2 font-poppins">{project.name}</h3>
-        <p className="text-slate dark:text-light-slate mb-4 h-20 overflow-hidden">{project.description}</p> {/* Added fixed height and overflow */} 
-        <div className="mb-4 flex flex-wrap min-h-[40px]"> {/* Added min-height */} 
+        <p className="text-slate dark:text-light-slate mb-4 h-24 overflow-y-auto">{project.description}</p>
+        <div className="mb-4 flex flex-wrap min-h-[40px]">
           {project.technologies.map((tech, index) => (
             <span key={index} className="text-xs bg-secondary dark:bg-lightest-navy px-2 py-1 rounded mr-2 mb-2 text-foreground dark:text-light-slate">
               {tech}

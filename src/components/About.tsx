@@ -3,11 +3,11 @@ import React from "react";
 // Define props interface
 interface AboutProps {
   summary: string;
-  // Add profilePicture URL here if you want to load it dynamically
-  // profilePicture?: string;
+  // Add profilePicture URL here
+  profilePicture?: string;
 }
 
-const About = ({ summary }: AboutProps) => {
+const About = ({ summary, profilePicture }: AboutProps) => {
   return (
     <section id="about" className="bg-white dark:bg-navy">
       <div className="section-container">
@@ -21,13 +21,22 @@ const About = ({ summary }: AboutProps) => {
           <div className="md:col-span-2 animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>
             <div className="relative max-w-xs mx-auto md:ml-auto md:mr-0">
               <div className="absolute -top-3 -left-3 w-full h-full border-2 border-green rounded-lg"></div>
-              <div className="relative z-10 overflow-hidden rounded-lg bg-green/10 aspect-square">
-                {/* Placeholder for profile image */}
-                <div className="w-full h-full flex items-center justify-center bg-secondary dark:bg-light-navy text-slate">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </div>
+              {/* Conditionally render image or placeholder */}
+              <div className="relative z-10 overflow-hidden rounded-lg bg-secondary dark:bg-light-navy aspect-square flex items-center justify-center">
+                {profilePicture ? (
+                  <img 
+                    src={profilePicture} 
+                    alt="Profile Picture" 
+                    className="w-full h-full object-cover" // Use object-cover here for profile pic usually
+                  />
+                ) : (
+                  // Placeholder SVG if no image
+                  <div className="text-slate flex items-center justify-center w-full h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -110,7 +110,7 @@ const Navbar = ({ personalInfo }: NavbarProps) => {
             )}
           </Button>
 
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
             <Button
               variant="outline"
               className="border-green text-green hover:bg-green/10"
@@ -179,7 +179,7 @@ const Navbar = ({ personalInfo }: NavbarProps) => {
             ))}
             <li>
               <a
-                href="/resume.pdf"
+                href="/Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"

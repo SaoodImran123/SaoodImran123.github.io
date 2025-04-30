@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -70,7 +69,7 @@ export default {
 				"light-slate": "#a8b2d1",
 				"lightest-slate": "#ccd6f6",
 				white: "#e6f1ff",
-				green: "#64ffda",
+				green: "#36c6a0",
 			},
 			fontFamily: {
 				sans: ["Inter", "sans-serif"],

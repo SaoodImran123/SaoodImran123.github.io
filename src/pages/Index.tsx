@@ -101,7 +101,7 @@ const Index = () => {
       <Navbar personalInfo={resumeData.personalInfo} />
       <main>
         <Hero personalInfo={resumeData.personalInfo} />
-        <About summary={resumeData.summary} />
+        <About summary={resumeData.summary} profilePicture={resumeData.personalInfo.profilePicture} />
         <Projects projects={resumeData.projects} />
         <Experience experience={resumeData.experience} />
         <Skills skills={resumeData.skills} />

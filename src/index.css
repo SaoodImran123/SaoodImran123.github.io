@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -116,7 +115,7 @@ html {
   }
   
   .nav-link {
-    @apply text-slate dark:text-light-slate hover:text-green dark:hover:text-green transition-colors duration-300 text-sm md:text-base;
+    @apply text-gray-600 dark:text-light-slate hover:text-green dark:hover:text-green transition-colors duration-300 text-sm md:text-base;
   }
   
   .project-card {
@@ -128,7 +127,7 @@ html {
   }
   
   .timeline-item {
-    @apply relative pl-8 pb-8 border-l border-slate dark:border-lightest-navy ml-4;
+    @apply relative pl-8 pb-8 border-l border-gray-300 dark:border-lightest-navy ml-4 text-gray-700 dark:text-light-slate;
   }
   
   .timeline-item::before {

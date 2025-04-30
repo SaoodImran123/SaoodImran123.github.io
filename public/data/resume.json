@@ -6,7 +6,7 @@
       "linkedin": "https://www.linkedin.com/in/saood-imran-0b1280246/",
       "github": "https://github.com/SaoodImran123",
       "website": "",
-      "profilePicture": ""
+      "profilePicture": "/photo-1.jpg"
     },
     "summary": "Junior Software Developer with hands-on experience building responsive web applications, developing scheduling tools, and automating workflows. Strong background in React, Next.js, Node.js, and database management. Proven ability to collaborate with cross-functional teams and deliver high-quality solutions in Agile environments.",
     "experience": [
@@ -64,40 +64,55 @@
       "REST APIs",
       "UI/UX Collaboration", 
       "Debugging", 
-      "API Integration"
+      "API Integration",
+      "AI"
     ],
     "projects": [
+    {
+            "name": "AniRename",
+            "description": "Engineered a Python-based desktop app to automate media library organization, featuring a Tkinter GUI, API integration, caching layers for efficiency, and undo capabilities for safe operations.",
+            "technologies": [],
+            "link": "https://github.com/SaoodImran123",
+            "demo": "",
+            "image": "/Ani-Renamer.png"
+        },
       {
-        "name": "Saood-Imran.com",
-        "description": "Built a professional-grade portfolio website using React and AWS, integrating a secure contact form with anti-spam protections to streamline inbound opportunities.",
+        "name": "Admin Dashboard",
+        "description": "Built a professional-grade admin dashboard for Autumnae Shop to enable order and product management along with sale metrics",
         "technologies": [],
-        "link": "",
+        "link": "https://github.com/SaoodImran123",
         "demo": "",
-        "image": ""
-      },
-      {
-        "name": "MovieZen (Capstone)",
-        "description": "Developed an AI-powered movie recommendation platform, combining chatbot-driven conversations with sentiment analysis algorithms to personalize recommendations and drive engagement.",
-        "technologies": [],
-        "link": "",
-        "demo": "",
-        "image": ""
+        "image": "/Admin-Dashboard.png"
       },
       {
         "name": "Autumnae Shop",
         "description": "Architecting a mobile-first e-commerce platform using Next.js, Supabase, Express, and Stripe, with a focus on secure transactions, dynamic product management, and an intuitive admin dashboard.",
         "technologies": [],
-        "link": "",
+        "link": "https://github.com/SaoodImran123",
         "demo": "",
-        "image": ""
+        "image": "/Autumnae-Frontend.png"
       },
       {
-        "name": "AniRename",
-        "description": "Engineered a Python-based desktop app to automate media library organization, featuring a Tkinter GUI, API integration, caching layers for efficiency, and undo capabilities for safe operations.",
+        "name": "Wordle App",
+        "description": "Designed an aesthetic Wordle app that uses the public Wordle API to allow users to play the daily wordle challenge. Features an on-screen keyboard for users using different devices.",
         "technologies": [],
-        "link": "",
+        "link": "https://github.com/SaoodImran123/WordleApp",
         "demo": "",
-        "image": ""
+        "image": "/Wordle-App.png"
+      },
+      {
+        "name": "Mirror",
+        "description": "A simple webRTC voice-calling and streaming app. Allows communication via voice, text, and video. Allows creation of channels and to host meetings similar to Zoom. Rooms accessed via codes given to authorized users.",
+        "technologies": [],
+        "link": "https://github.com/SaoodImran123/Mirror",
+        "demo": "",
+        "image": "/Mirror.png"
+      },
+      {
+        "name": "MovieZen",
+        "description": "Developed an AI-powered movie recommendation platform, combining chatbot-driven conversations with sentiment analysis algorithms to personalize recommendations and drive engagement.",
+        "technologies": [],
+        "link": "https://github.com/SaoodImran123/movie-chatbot"
       }
     ]
   } 
