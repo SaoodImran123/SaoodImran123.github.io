@@ -1,9 +1,16 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MoonIcon, SunIcon } from "lucide-react";
 
-const Navbar = () => {
+// Define the props interface
+interface NavbarProps {
+  personalInfo: {
+    name: string;
+    // Add other relevant fields from personalInfo if needed for the navbar
+  };
+}
+
+const Navbar = ({ personalInfo }: NavbarProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -69,8 +76,12 @@ const Navbar = () => {
     >
       <div className="container max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center space-x-2">
-          <span className="text-green text-3xl font-bold">S</span>
-          <span className="text-xl font-medium dark:text-white">Saood</span>
+          <span className="text-green text-3xl font-bold">
+            {personalInfo.name.charAt(0).toUpperCase()}
+          </span>
+          <span className="text-xl font-medium dark:text-white">
+            {personalInfo.name.split(' ')[0]}
+          </span>
         </a>
 
         {/* Desktop Navigation */}

@@ -1,7 +1,13 @@
-
 import React from "react";
 
-const About = () => {
+// Define props interface
+interface AboutProps {
+  summary: string;
+  // Add profilePicture URL here if you want to load it dynamically
+  // profilePicture?: string;
+}
+
+const About = ({ summary }: AboutProps) => {
   return (
     <section id="about" className="bg-white dark:bg-navy">
       <div className="section-container">
@@ -9,13 +15,7 @@ const About = () => {
         <div className="grid md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-3 animate-fade-in opacity-0" style={{ animationDelay: "0.2s" }}>
             <p className="text-slate dark:text-light-slate mb-4">
-              I'm a full-stack developer with a strong focus on clean code, modern web technologies, and building impactful digital experiences.
-            </p>
-            <p className="text-slate dark:text-light-slate mb-4">
-              My journey in web development started with a curiosity about how websites work, which evolved into a passion for creating efficient, user-centric applications. I enjoy solving complex problems and continuously learning new technologies to improve my craft.
-            </p>
-            <p className="text-slate dark:text-light-slate">
-              When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or expanding my knowledge through online courses and technical books.
+              {summary}
             </p>
           </div>
           <div className="md:col-span-2 animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>

@@ -1,9 +1,17 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
-const Hero = () => {
+// Define props interface
+interface HeroProps {
+  personalInfo: {
+    name: string;
+    tagline: string;
+    // Add other fields if needed (e.g., a short intro sentence)
+  };
+}
+
+const Hero = ({ personalInfo }: HeroProps) => {
   return (
     <section
       id="home"
@@ -13,10 +21,10 @@ const Hero = () => {
         <div className="max-w-3xl animate-fade-in opacity-0" style={{ animationDelay: "0.3s" }}>
           <p className="text-green font-medium mb-2">Hi, my name is</p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-poppins mb-2">
-            Saood Imran
+            {personalInfo.name}
           </h1>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate dark:text-light-slate font-poppins mb-6">
-            Full-Stack Web Developer
+            {personalInfo.tagline}
           </h2>
           <p className="text-lg text-slate dark:text-light-slate mb-8 max-w-2xl">
             I build efficient, scalable, and user-friendly web applications.

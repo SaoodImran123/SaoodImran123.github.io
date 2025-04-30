@@ -1,73 +1,49 @@
-
 import React from "react";
 
-interface Job {
-  id: number;
+// Interface matching resume.json structure
+interface ExperienceItem {
   title: string;
   company: string;
-  period: string;
-  responsibilities: string[];
+  location: string; // Location is present in JSON
+  years: string;
+  description: string[];
+  companyLogo?: string; // Optional logo
 }
 
-const Experience = () => {
+// Define props for the Experience component
+interface ExperienceProps {
+  experience: ExperienceItem[];
+}
+
+const Experience = ({ experience }: ExperienceProps) => {
+  // Remove hardcoded jobs array
+  /*
   const jobs: Job[] = [
-    {
-      id: 1,
-      title: "Senior Full Stack Developer",
-      company: "Tech Innovations Inc.",
-      period: "Jan 2022 - Present",
-      responsibilities: [
-        "Architected and developed scalable microservices using Node.js and Docker.",
-        "Led the frontend team in migrating legacy code to React with TypeScript.",
-        "Implemented CI/CD pipelines using GitHub Actions, reducing deployment time by 40%.",
-        "Mentored junior developers through code reviews and pair programming sessions."
-      ]
-    },
-    {
-      id: 2,
-      title: "Full Stack Developer",
-      company: "WebSolutions Co.",
-      period: "Mar 2020 - Dec 2021",
-      responsibilities: [
-        "Built RESTful APIs using Express and MongoDB for various client projects.",
-        "Developed responsive front-end interfaces with React and Redux.",
-        "Optimized database queries, improving application performance by 30%.",
-        "Collaborated with UX designers to implement user-friendly interfaces."
-      ]
-    },
-    {
-      id: 3,
-      title: "Junior Web Developer",
-      company: "Digital Creations",
-      period: "Jun 2018 - Feb 2020",
-      responsibilities: [
-        "Created responsive websites for clients using HTML, CSS, and JavaScript.",
-        "Developed and maintained WordPress themes and plugins.",
-        "Assisted in the implementation of e-commerce solutions using WooCommerce.",
-        "Participated in Agile development cycles and sprint planning."
-      ]
-    }
+    // ... hardcoded data ...
   ];
+  */
 
   return (
     <section id="experience" className="bg-white dark:bg-navy">
       <div className="section-container">
         <h2 className="section-title">Work Experience</h2>
         <div className="mt-12">
-          {jobs.map((job) => (
+          {/* Map over the experience prop */}
+          {experience.map((job, index) => ( 
             <div 
-              key={job.id} 
+              key={index} // Use index as key
               className="timeline-item animate-fade-in opacity-0" 
-              style={{ animationDelay: `${job.id * 0.2}s` }}
+              style={{ animationDelay: `${index * 0.1}s` }} // Use index for delay
             >
               <div className="mb-1">
                 <h3 className="text-xl font-bold font-poppins">{job.title}</h3>
-                <p className="text-green font-medium">{job.company}</p>
-                <p className="text-sm text-slate dark:text-light-slate mb-3">{job.period}</p>
+                <p className="text-green font-medium">{job.company} <span className="text-slate dark:text-light-slate text-sm font-normal">({job.location})</span></p> {/* Added location */} 
+                <p className="text-sm text-slate dark:text-light-slate mb-3">{job.years}</p>
               </div>
               <ul className="list-disc pl-4 text-slate dark:text-light-slate space-y-1">
-                {job.responsibilities.map((responsibility, index) => (
-                  <li key={index}>{responsibility}</li>
+                {/* Use job.description which is already an array */}
+                {job.description.map((responsibility, respIndex) => (
+                  <li key={respIndex}>{responsibility}</li>
                 ))}
               </ul>
             </div>

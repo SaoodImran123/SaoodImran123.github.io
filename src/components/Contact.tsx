@@ -1,9 +1,18 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-const Contact = () => {
+// Define props interface
+interface ContactProps {
+  personalInfo: {
+    email: string;
+    github: string;
+    linkedin: string;
+    // Add website if needed for contact section
+  };
+}
+
+const Contact = ({ personalInfo }: ContactProps) => {
   return (
     <section id="contact" className="bg-white dark:bg-navy">
       <div className="section-container">
@@ -14,16 +23,16 @@ const Contact = () => {
           </p>
           
           <div className="flex flex-col items-center space-y-8">
-            <a href="mailto:saood.imran@example.com" className="group">
+            <a href={`mailto:${personalInfo.email}`} className="group">
               <Button className="bg-green hover:bg-green/90 text-navy flex items-center gap-2 px-6 py-6">
                 <Mail className="h-5 w-5" />
-                <span className="font-medium">saood.imran@example.com</span>
+                <span className="font-medium">{personalInfo.email}</span>
               </Button>
             </a>
             
             <div className="flex items-center justify-center space-x-6">
               <a 
-                href="https://github.com/username" 
+                href={personalInfo.github}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-secondary dark:bg-lightest-navy text-foreground dark:text-light-slate hover:text-green dark:hover:text-green transition-colors"
@@ -32,7 +41,7 @@ const Contact = () => {
                 <Github className="h-6 w-6" />
               </a>
               <a 
-                href="https://linkedin.com/in/username" 
+                href={personalInfo.linkedin}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-secondary dark:bg-lightest-navy text-foreground dark:text-light-slate hover:text-green dark:hover:text-green transition-colors"

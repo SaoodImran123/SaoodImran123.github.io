@@ -1,0 +1,103 @@
+{
+    "personalInfo": {
+      "name": "Saood Imran",
+      "tagline": "Software Developer",
+      "email": "saood.imran.office@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/saood-imran-0b1280246/",
+      "github": "https://github.com/SaoodImran123",
+      "website": "",
+      "profilePicture": ""
+    },
+    "summary": "Junior Software Developer with hands-on experience building responsive web applications, developing scheduling tools, and automating workflows. Strong background in React, Next.js, Node.js, and database management. Proven ability to collaborate with cross-functional teams and deliver high-quality solutions in Agile environments.",
+    "experience": [
+      {
+        "title": "Associate",
+        "company": "Infosys",
+        "location": "Mississauga, ON",
+        "years": "10/2022 – 10/2023",
+        "description": [
+          "Spearheaded development of dynamic web features, translating 50+ user stories into seamless, production-ready components.",
+          "Engineered solutions for real-world business challenges, collaborating closely with QA and design teams in fast-paced Agile sprints.",
+          "Diagnosed and resolved critical front-end and back-end bugs, improving application reliability and user satisfaction.",
+          "Bridged the gap between technical complexity and user needs, presenting design updates to stakeholders with clarity and precision."
+        ],
+        "companyLogo": ""
+      },
+      {
+        "title": "Software Engineer (Internship)",
+        "company": "Ontario Power Generation",
+        "location": "Bowmanville, ON",
+        "years": "07/2020 - 07/2021",
+        "description": [
+          "Designed and deployed internal scheduling tools that optimized nuclear fuel storage operations and informed strategic planning.",
+          "Streamlined documentation workflows by automating daily reporting processes, enabling faster sign-offs by field engineers.",
+          "Communicated technical concepts effectively across multidisciplinary teams, driving the adoption of innovation-driven solutions.",
+          "Secured buy-in from leadership for new digital tools by pitching value propositions to non-technical executives."
+        ],
+        "companyLogo": ""
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Engineering",
+        "institution": "Ontario Technology University",
+        "location": "Oshawa, ON",
+        "years": "04/2022",
+        "details": "",
+        "institutionLogo": ""
+      }
+    ],
+    "skills": [
+      "Python", 
+      "JavaScript", 
+      "HTML5", 
+      "CSS",
+      "React", 
+      "Next.js", 
+      "Node.js", 
+      "Express.js",
+      "MongoDB", 
+      "MySQL",
+      "AWS", 
+      "Git", 
+      "Agile Development", 
+      "REST APIs",
+      "UI/UX Collaboration", 
+      "Debugging", 
+      "API Integration"
+    ],
+    "projects": [
+      {
+        "name": "Saood-Imran.com",
+        "description": "Built a professional-grade portfolio website using React and AWS, integrating a secure contact form with anti-spam protections to streamline inbound opportunities.",
+        "technologies": [],
+        "link": "",
+        "demo": "",
+        "image": ""
+      },
+      {
+        "name": "MovieZen (Capstone)",
+        "description": "Developed an AI-powered movie recommendation platform, combining chatbot-driven conversations with sentiment analysis algorithms to personalize recommendations and drive engagement.",
+        "technologies": [],
+        "link": "",
+        "demo": "",
+        "image": ""
+      },
+      {
+        "name": "Autumnae Shop",
+        "description": "Architecting a mobile-first e-commerce platform using Next.js, Supabase, Express, and Stripe, with a focus on secure transactions, dynamic product management, and an intuitive admin dashboard.",
+        "technologies": [],
+        "link": "",
+        "demo": "",
+        "image": ""
+      },
+      {
+        "name": "AniRename",
+        "description": "Engineered a Python-based desktop app to automate media library organization, featuring a Tkinter GUI, API integration, caching layers for efficiency, and undo capabilities for safe operations.",
+        "technologies": [],
+        "link": "",
+        "demo": "",
+        "image": ""
+      }
+    ]
+  } 
