@@ -5,10 +5,10 @@
       "email": "saood.imran.office@gmail.com",
       "linkedin": "https://www.linkedin.com/in/saood-imran-0b1280246/",
       "github": "https://github.com/SaoodImran123",
-      "website": "",
+      "website": "https://saoodimran123.github.io/",
       "profilePicture": "/photo-1.jpg"
     },
-    "summary": "Junior Software Developer with hands-on experience building responsive web applications, developing scheduling tools, and automating workflows. Strong background in React, Next.js, Node.js, and database management. Proven ability to collaborate with cross-functional teams and deliver high-quality solutions in Agile environments.",
+    "summary": "Full Stack Developer with experience building responsive web applications, developing scheduling tools, and automating business workflows. Skilled in React, Node.js, SQL, and data integration. Proven track record of collaborating in cross-functional teams to build tools that support decision making in fast-paced environments",
     "experience": [
       {
         "title": "Associate",
@@ -16,10 +16,12 @@
         "location": "Mississauga, ON",
         "years": "10/2022 – 10/2023",
         "description": [
-          "Spearheaded development of dynamic web features, translating 50+ user stories into seamless, production-ready components.",
-          "Engineered solutions for real-world business challenges, collaborating closely with QA and design teams in fast-paced Agile sprints.",
-          "Diagnosed and resolved critical front-end and back-end bugs, improving application reliability and user satisfaction.",
-          "Bridged the gap between technical complexity and user needs, presenting design updates to stakeholders with clarity and precision."
+          "Developed and deployed dynamic web features by translating 50+ user stories into seamless, production-ready components using Node.js, React, and SQL-backed APIs.",
+          "Diagnosed and resolved front-end and back-end issues, improving application performance and system reliability.}",
+          "Built and optimized PostgreSQL queries to support real-time data integration for dashboards and APIs.",
+          "Provided technical support to internal stakeholders by troubleshooting bugs, explaining system functionality, and minimizing operational disruptions.",
+          "Collaborated across the full SDLC using Git, Agile, and stakeholder feedback to ensure delivery of business-aligned features.",
+          "Completed internal certifications in Windows Administration, Office 365, ServiceNow, and ITIL Foundations to support infrastructure and service management."
         ],
         "companyLogo": ""
       },
@@ -29,10 +31,11 @@
         "location": "Bowmanville, ON",
         "years": "07/2020 - 07/2021",
         "description": [
-          "Designed and deployed internal scheduling tools that optimized nuclear fuel storage operations and informed strategic planning.",
-          "Streamlined documentation workflows by automating daily reporting processes, enabling faster sign-offs by field engineers.",
-          "Communicated technical concepts effectively across multidisciplinary teams, driving the adoption of innovation-driven solutions.",
-          "Secured buy-in from leadership for new digital tools by pitching value propositions to non-technical executives."
+          "Developed internal scheduling tools and automated ETL pipelines using Python to transform CSV/Excel data into actionable reports.",
+          "Handled structured and unstructured data for transformation, validation, storage, and reporting, enhancing daily operational insights.",
+          "Built interactive Power BI dashboards to visualize key metrics, improving understanding of data and informing decisions.",
+          "Trained end-users on new technology and digital tools by creating walkthroughs and documentation, facilitating smoother onboarding and tool adoption.",
+          "Effectively communicated technical concepts to multidisciplinary teams and pitched new digital solutions to non-technical executives."
         ],
         "companyLogo": ""
       }
@@ -102,7 +105,7 @@
       },
       {
         "name": "Mirror",
-        "description": "A simple webRTC voice-calling and streaming app. Allows communication via voice, text, and video. Allows creation of channels and to host meetings similar to Zoom. Rooms accessed via codes given to authorized users.",
+        "description": "A webRTC voice-calling and streaming app. Allows communication via voice, text, and video. Allows creation of channels and to host meetings similar to Zoom. Rooms accessed via codes given to authorized users.",
         "technologies": [],
         "link": "https://github.com/SaoodImran123/Mirror",
         "demo": "",
