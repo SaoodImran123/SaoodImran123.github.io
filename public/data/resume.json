@@ -66,7 +66,7 @@
       "Git",
       "Kafka",
       "ZooKeeper",
-      "Docker",
+      "Docker"
     ],
     "projects": [
             {
@@ -74,7 +74,7 @@
             "description": "Built a containerized data pipeline to display and track real-time Air Quality Health Index and Weather data from various sensors across Oshawa",
             "technologies": [],
             "link": "https://github.com/SaoodImran123",
-            "demo": "",
+            "demo": ""
         },
     {
             "name": "AniRename",
