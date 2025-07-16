@@ -16,12 +16,6 @@ interface ExperienceProps {
 }
 
 const Experience = ({ experience }: ExperienceProps) => {
-  // Remove hardcoded jobs array
-  /*
-  const jobs: Job[] = [
-    // ... hardcoded data ...
-  ];
-  */
 
   return (
     <section id="experience" className="bg-white dark:bg-navy">
