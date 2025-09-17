@@ -16,11 +16,11 @@
         "location": "Mississauga, ON",
         "years": "10/2022 – 10/2023",
         "description": [
-          "Developed and deployed multiple web apps/features such as Job boards, FAQ's, dashboards, InfyHealth components while working in a large multi-functional team",
-          "Built new and optimized old databases/queries, reducing latency by 500% for certain data displays}",
-          "Built APIs / wrote business logic in Java/Python for PostgreSQL, MongoDB, and Redis databases used in internal projects",
-          "Collaborated across the full SDLC using Git, Agile, and stakeholder feedback to ensure delivery of business-aligned features.",
-          "Completed Infosys courses/certs for Cloud providers such as AWS and GCP"
+          "Developed front and backend components for InfyInsurance, a multi-role web app used by patients, providers, and insurers, using Java Spring Boot, PostgreSQL, and Angular",
+          "Optimized old database tables and queries in PostgreSQL, reducing latency by 2-300% for certain requests",
+          "Built and documented RESTful APIs to support claims processing, benefit lookups, and policy administration across user groups",
+          "Delivered enhancements to internal tools (e.g., job posting portal, FAQ dashboard, internal query submission app) that improved usability and reduced manual queries",
+          "Collaborated in an Agile team of 6–8 developers, regularly participating in sprint planning, code reviews, and demos to iterate on business requirements."
         ],
         "companyLogo": ""
       },
@@ -30,11 +30,11 @@
         "location": "Bowmanville, ON",
         "years": "07/2020 - 07/2021",
         "description": [
-          "Developed spent fuel analysis tool to re-organize and future-proof multiple radioactive fuel bays with extraction costs and decommissioning targets in mind",
-          "Developed Web Apps and ETL pipelines to process and transform data into actionable reports ready to be signed off by decision makers",
-          "Drove full project lifecycle including stakeholder meetings, technical architecture decisions, and full-stack development",
-          "Trained end-users on new technology and digital tools by creating walkthroughs and documentation, facilitating smoother onboarding and tool adoption.",
-          "Effectively communicated technical concepts to multidisciplinary teams and pitched new digital solutions to non-technical executives."
+          "Developed spent fuel analysis tool (python) to re-organize and future-proof multiple radioactive fuel bays minimize extraction costs reach decommissioning targets",
+          "Reduced operational overhead by 90% through automation of daily reporting workflows and document generation, saving $250,000 over 10 years.",
+          "Implemented intelligent sorting algorithm for large datasets to handle complex stacking dependencies (6-layer deep storage) and time-based removal requirements, optimizing throughput while preventing future bottlenecks in extraction plans",
+          "Led full project lifecycle including stakeholder meetings, technical architecture decisions, and full-stack development for my main project",
+          "Collaborated with people from various disciplines and backgrounds effectively, to manage projects and introduce new Software and Technology as apart of the Innovation department"
         ],
         "companyLogo": ""
       }
